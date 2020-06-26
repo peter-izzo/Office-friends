@@ -7,7 +7,7 @@ const Card = ({ name, email, id }) => {
 
         <div className="tc bg-light-blue dib br3 ps3 ma2 grow bw2 shadow-5">
             <Tilt classname="Tilt" options={{ max : 35, scale: 1}}>
-                <img alt="pic" src={require('./pics/' + id + '.png')} width="250" height="300"  />
+                <img alt="pic" src={require('../pics/' + id + '.png')} width="250" height="300"  />
             </Tilt>
             <>
                 <h2>{name}</h2>
