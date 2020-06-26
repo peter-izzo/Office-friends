@@ -2,9 +2,6 @@ import React from 'react';
 import Card from './Card';
 
 const CardList = ({ employees }) => {
-    if(true) {
-        throw new Error('Woops');
-    }
     return (
         <>
             {
