@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import CardList from './CardList';
 import { employees } from './employees';
 import SearchBox from './SearchBox';
+import Scroll from './Scroll';
 
 
 class App extends Component {
@@ -13,6 +14,10 @@ class App extends Component {
             employees: employees,
             searchfield: ''
         }
+    }
+
+    componentDidMount() {
+        console.log('check');
     }
 
     onSearchChange = (event) => {
@@ -28,7 +33,7 @@ class App extends Component {
             <div className="tc">
             <h1>Dunder Mifflin Employees</h1>
             <SearchBox onSearchChange={this.onSearchChange}/>
-            <CardList employees={filtered}/>
+                <CardList employees={filtered}/>
             </div>
         );
     }
